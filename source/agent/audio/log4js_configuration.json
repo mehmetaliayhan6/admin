@@ -1,0 +1,23 @@
+{
+  "appenders": [
+    {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%d  - %p: %c - %m",
+        "replaceConsole": true
+      }
+    }
+  ],
+  "levels": {
+    "ClusterWorker": "INFO",
+    "LoadCollector": "INFO",
+    "AmqpClient": "INFO",
+    "WorkingNode": "INFO",
+    "NodeManager": "INFO",
+    "AudioNode": "INFO",
+    "WorkingAgent": "INFO",
+    "Connections": "INFO",
+    "InternalConnectionFactory": "INFO"
+  }
+}

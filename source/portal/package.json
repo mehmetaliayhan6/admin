@@ -1,0 +1,35 @@
+{
+  "name": "OWT-MCU-Portal",
+  "version":"4.3.0",
+  "dependencies": {
+    "amqp": "*",
+    "socket.io": "^2.2.0",
+    "log4js": "^1.1.1",
+    "toml": "*",
+    "sprintf-js": "^1.0.3",
+    "ajv": "^5.2.2",
+    "mongoose": "^4.13.6",
+    "fraction.js": "^4.0.12"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "sinon": "^1.15.4",
+    "sinon-as-promised": "^4.0.0",
+    "istanbul": "*",
+    "request": "*",
+    "mockery": "*",
+    "socket.io-client": "2.2.0"
+  },
+  "scripts": {
+    "test": "mocha ./test -R spec --timeout 5000 --exit",
+    "test:cover": "istanbul cover _mocha -- ./test -R spec --timeout 5000 --exit"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "targets": [
+      "node8"
+    ]
+  }
+}
