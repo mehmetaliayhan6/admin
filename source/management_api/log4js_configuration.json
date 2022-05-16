@@ -1,0 +1,37 @@
+{
+  "appenders": {
+    "out": {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%d  - %p: %c - %m",
+        "replaceConsole": true
+      }
+    }
+  },
+  "categories": {
+    "default": { "appenders": [ "out" ], "level": "info" },
+    "ServiceRegistry": { "appenders": [ "out" ], "level": "info" },
+    "RoomRegistry": { "appenders": [ "out" ], "level": "info" },
+    "TokenRegistry": { "appenders": [ "out" ], "level": "info" },
+    "ServicesResource": { "appenders": [ "out" ], "level": "info" },
+    "ServiceResource": { "appenders": [ "out" ], "level": "info" },
+    "RoomsResource": { "appenders": [ "out" ], "level": "info" },
+    "RoomResource": { "appenders": [ "out" ], "level": "info" },
+    "UsersResource": { "appenders": [ "out" ], "level": "info" },
+    "UserResource": { "appenders": [ "out" ], "level": "info" },
+    "TokensResource": { "appenders": [ "out" ], "level": "info" },
+    "ServerAuthenticator": { "appenders": [ "out" ], "level": "info" },
+    "RequestHandler": { "appenders": [ "out" ], "level": "info" },
+    "RPCPublic": { "appenders": [ "out" ], "level": "info" },
+    "RPC": { "appenders": [ "out" ], "level": "info" },
+    "ManagementServer": { "appenders": [ "out" ], "level": "info" },
+    "Room": { "appenders": [ "out" ], "level": "info" },
+    "StreamsResource": { "appenders": [ "out" ], "level": "info" },
+    "ParticipantsResource": { "appenders": [ "out" ], "level": "info" },
+    "StreamingOutsResource": { "appenders": [ "out" ], "level": "info" },
+    "RecordingsResource": { "appenders": [ "out" ], "level": "info" },
+    "SipCallsResource": { "appenders": [ "out" ], "level": "info" }
+  }
+}
+
